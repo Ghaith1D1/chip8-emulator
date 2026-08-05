@@ -1,42 +1,41 @@
 # 🕹️ CHIP-8 Emulator
 
-##  Kurzbeschreibung
-Das Programm ist ein Emulator (Interpreter) für die historische virtuelle Spielkonsole **CHIP-8** aus den 1970er Jahren.
+## Short Description
 
-Das Programm ist in der Lage:
-* Originale CHIP-8 ROM-Dateien (z. B. klassische Spiele wie *Pong* oder *Tetris*) binär einzulesen.
-* Die darin enthaltenen Bytecode-Instruktionen mithilfe einer emulierten CPU auszuführen.
-* Das Spielgeschehen visuell darzustellen.
+This program is an emulator (interpreter) for the historic virtual game console **CHIP-8** from the 1970s.
 
-##  Benutzungsbeispiel
-Der Benutzer startet die Anwendung über die Benutzeroberfläche oder das Terminal und übergibt dabei als Argument den Pfad zu einer CHIP-8 ROM-Datei:
+The program is capable of:
+* Reading original CHIP-8 ROM files (e.g., classic games like *Pong* or *Tetris*) in binary format.
+* Executing the contained bytecode instructions using an emulated CPU.
+* Rendering the gameplay visually.
+
+## Usage Example
+
+The user starts the application via the user interface or the terminal, passing the path to a CHIP-8 ROM file as an argument:
 
 ```bash
 java -jar emulator.jar roms/pong.ch8
 ``` 
 
-Ablauf:
+Execution Flow:
 
- * Das Programm validiert die Datei und lädt sie in den emulierten Arbeitsspeicher.
+ * The program validates the file and loads it into the emulated memory.
+* An application window opens, displaying the monochrome playfield.
 
-* Es öffnet sich ein Anwendungsfenster, das das monochrome Spielfeld anzeigt.
-
-* Der Benutzer kann nun das Spiel in Echtzeit steuern.
+* The user can now control the game in real-time.
 
 
-Dabei werden die Tasten auf das historische 16-Tasten-Hex-Keypad über die PC-Tastatur gemappt:
-
+The keys are mapped to the historical 16-key hex keypad via the PC keyboard:
 
     1 2 3 4  
     Q W E R  
     A S D F  
     Y X C V  
 
-Das Spiel läuft flüssig, bis der Benutzer das Fenster schließt.
+The game runs smoothly until the user closes the window.
+## Getting ROMs
 
-## ROMs beziehen
-
-Die benötigten CHIP-8 ROMs, die man mit diesem Emulator nutzen kann, findet man im folgenden Archiv:
+The required CHIP-8 ROMs compatible with this emulator can be found in the following archive:
 [CHIP-8 ROM Archive](https://johnearnest.github.io/chip8Archive/)
 
-**Hinweis:** Ich habe bereits ein paar spielbare ROMs im Ordner `roms/` mitgeladen.
+**Note:** I have already included a few playable ROMs in the `roms/` directory.
