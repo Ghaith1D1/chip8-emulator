@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+}
+
+application {
+    mainClass = 'Main'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['main']
+        }
+    }
+}
