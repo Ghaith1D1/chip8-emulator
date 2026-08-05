@@ -2,7 +2,7 @@
 
 ## Short Description
 
-This program is an emulator (interpreter) for the historic virtual game console **CHIP-8** from the 1970s.
+This program is an emulator for the historic virtual game console **CHIP-8** from the 1970s.
 
 The program is capable of:
 * Reading original CHIP-8 ROM files (e.g., classic games like *Pong* or *Tetris*) in binary format.
